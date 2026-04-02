@@ -2,44 +2,44 @@
   "navbar": {
     "services": [
       {
-        "title": "CASH OFFERS",
-        "description": "Get a fair, no-obligation cash offer for your home in as little as 24 hours",
-        "icon": "DollarSign",
+        "title": "ROOF REPLACEMENT",
+        "description": "Full roof replacement services using premium materials. Free inspections and estimates.",
+        "icon": "Home",
         "items": [
-          "Same Day Offers",
-          "No Obligation Quotes",
-          "Fair Market Value",
-          "No Hidden Fees"
+          "Free Estimates",
+          "Multiple Material Options",
+          "Upfront Pricing",
+          "Warranty Included"
         ],
-        "features": ["Cash in Hand", "No Commissions", "Fast Closing"]
+        "features": ["Same Week Service", "No Hidden Fees", "Quality Materials"]
       },
       {
-        "title": "FORECLOSURE HELP",
-        "description": "Expert assistance for homeowners facing foreclosure. Get a fresh start today.",
-        "icon": "ShieldAlert",
+        "title": "ROOF REPAIRS",
+        "description": "Fast, reliable repairs for leaks, storm damage, and missing shingles.",
+        "icon": "Shield",
         "items": [
-          "Stop Foreclosure",
-          "Short Sales",
-          "Debt Relief",
-          "Equity Extraction"
+          "Emergency Tarping",
+          "Leak Detection",
+          "Storm Damage Repair",
+          "Shingle Replacement"
+        ],
+        "features": ["24/7 Emergency", "Insurance Claims", "Quick Turnaround"]
+      },
+      {
+        "title": "CONSTRUCTION",
+        "description": "Full-service construction including siding, windows, decks, and additions.",
+        "icon": "Building",
+        "items": [
+          "Siding Installation",
+          "Window Replacement",
+          "Deck Building",
+          "Home Additions"
         ],
         "features": [
-          "Stress-Free Process",
-          "Credit Protection",
-          "Fast Solutions"
+          "Licensed Contractors",
+          "Permit Handling",
+          "Custom Designs"
         ]
-      },
-      {
-        "title": "INHERITED PROPERTIES",
-        "description": "Sell inherited homes quickly without the hassle of repairs or renovations",
-        "icon": "Heart",
-        "items": [
-          "Probate Properties",
-          "As-Is Purchases",
-          "Estate Sales",
-          "No Cleanup Required"
-        ],
-        "features": ["No Repairs Needed", "Quick Closing", "Fair Offers"]
       }
     ],
     "companyLinks": [
@@ -54,8 +54,8 @@
         "icon": "Users"
       },
       {
-        "label": "Testimonials",
-        "href": "#testimonials",
+        "label": "Projects",
+        "href": "#projects",
         "icon": "Star"
       },
       {
@@ -71,46 +71,46 @@
     ],
     "stats": [
       {
-        "value": "500+",
-        "label": "Homes Bought",
+        "value": "1000+",
+        "label": "Roofs Replaced",
         "icon": "Home"
       },
       {
         "value": "24hr",
-        "label": "Fast Offers",
+        "label": "Emergency Service",
         "icon": "Clock"
       },
       {
         "value": "100%",
-        "label": "Client Satisfaction",
-        "icon": "Star"
+        "label": "Licensed & Insured",
+        "icon": "Shield"
       },
       {
-        "value": "No Fees",
-        "label": "Zero Commissions",
-        "icon": "Shield"
+        "value": "No $",
+        "label": "Free Estimates",
+        "icon": "DollarSign"
       }
     ],
     "cta": {
-      "title": "Get Your Cash Offer Today",
-      "description": "Fill out our simple form and get a fair cash offer within 24 hours",
-      "buttonText": "Get Cash Offer",
+      "title": "Get Your Free Roof Inspection",
+      "description": "Schedule your no-obligation roof inspection and get an honest assessment today.",
+      "buttonText": "Free Estimate",
       "buttonLink": "#quote"
     }
   },
   "hero": {
-    "badge": "Same Day Cash Offers!",
-    "headlines": ["Sell Your Home", "Get Cash Today"],
-    "description": "Need to sell your home quickly? Right Now Home Buyers provides same-day offers, ensuring a hassle-free experience. Are you in pre-foreclosure? We have tailored options to help you get paid and move on from your property today!",
+    "badge": "Free Roof Inspections!",
+    "headlines": ["Quality Roofing", "Expert Construction"],
+    "description": "Need a new roof or emergency repairs? Orr Roofing & Construction provides fast, reliable service with free estimates. We handle insurance claims and offer same-week service for storm damage.",
     "buttons": [
       {
-        "text": "Get My Offer Now",
+        "text": "Free Estimate",
         "href": "#contact",
         "primary": true,
         "icon": "DollarSign"
       },
       {
-        "text": "How It Works",
+        "text": "How We Work",
         "href": "#how-it-works",
         "primary": false,
         "icon": "Info"
@@ -119,95 +119,95 @@
     "stats": [
       {
         "value": "24hr",
-        "label": "Same Day Offers",
+        "label": "Emergency Response",
         "icon": "Clock"
       },
       {
-        "value": "Cash",
-        "label": "Guaranteed",
+        "value": "Free",
+        "label": "Estimates",
         "icon": "DollarSign"
       },
       {
-        "value": "No",
-        "label": "Commissions",
+        "value": "Lifetime",
+        "label": "Warranties",
         "icon": "Shield"
       },
       {
-        "value": "As-Is",
-        "label": "No Repairs",
+        "value": "Licensed",
+        "label": "Insured",
         "icon": "Home"
       }
     ]
   },
   "about": {
-    "badge": "Michigan's Trusted Home Buyer",
+    "badge": "Your Trusted Local Contractor",
     "headline": {
       "prefix": "The",
-      "highlight": "Right Now Home Buyers",
+      "highlight": "Orr Roofing & Construction",
       "suffix": "Advantage"
     },
-    "description": "At Right Now Home Buyers, we make selling your home easy with Cash Right Now! We understand the importance of a quick cash sale, so we eliminate the stress and delays of working with traditional real estate agents. .",
+    "description": "At Orr Roofing & Construction, we believe in quality craftsmanship and honest service. We take the stress out of home improvement with clear communication, upfront pricing, and guaranteed workmanship.",
     "image": {
-      "src": "RightNowTeam",
-      "alt": "Right Now Home Buyers team - Michigan cash home buyers",
-      "badge": "Cash Offers"
+      "src": "OrrTeam",
+      "alt": "Orr Roofing team - professional roofers",
+      "badge": "Free Estimates"
     },
     "stats": [
       {
-        "value": 500,
+        "value": 1000,
         "suffix": "+",
-        "label": "Homes Purchased"
+        "label": "Projects Completed"
       },
       {
         "value": 100,
         "suffix": "%",
-        "label": "Hassle-Free"
+        "label": "Satisfaction"
       },
       {
         "value": 24,
         "suffix": "hr",
-        "label": "Fast Offers"
+        "label": "Emergency Service"
       }
     ],
     "buttons": [
       {
-        "text": "GET CASH OFFER",
+        "text": "GET FREE QUOTE",
         "href": "#contact",
         "primary": true
       },
       {
-        "text": "LEARN MORE",
+        "text": "VIEW PROJECTS",
         "href": "#how-it-works",
         "primary": false
       }
     ],
     "trustBadges": {
-      "happyClients": 500,
+      "happyClients": 1000,
       "emergency": "24/7"
     },
-    "coreValues": ["Fast Cash", "No Commissions", "Transparency"]
+    "coreValues": ["Quality Work", "Upfront Pricing", "Guaranteed"]
   },
   "services": {
-    "badge": "Sell Your Home Fast",
+    "badge": "What We Offer",
     "headline": {
-      "prefix": "We Buy Homes In",
-      "highlight": "Any Condition",
-      "suffix": "For Cash"
+      "prefix": "Professional",
+      "highlight": "Roofing & Construction",
+      "suffix": "Services"
     },
     "description": [
-      "Right Now Home Buyers specializes in buying homes that need to be sold fast. We understand the urgency and offer a quick and hassle-free process for homeowners looking to sell their properties.",
-      "<span class=\"font-semibold text-primary\">Cash Offers • No Fees • Fast Closing</span>"
+      "Orr Roofing & Construction specializes in residential and commercial roofing, plus full construction services. We handle everything from minor repairs to complete home renovations.",
+      "<span class=\"font-semibold text-primary\">Free Estimates • Licensed • Warranty</span>"
     ],
     "stats": [
       {
-        "value": 500,
+        "value": 1000,
         "suffix": "+",
-        "label": "Homes"
+        "label": "Projects"
       },
       {
         "value": 24,
         "suffix": "hr",
-        "label": "Offers"
+        "label": "Emergency"
       },
       {
         "value": 4.9,
@@ -218,188 +218,184 @@
     "services": [
       {
         "number": "01",
-        "title": "Same Day Cash Offers",
-        "description": "Get a fair, no-obligation cash offer within 24 hours. No waiting, no uncertainty—just a straightforward solution to sell your home fast.",
-        "icon": "DollarSign",
-        "tag": "Cash",
-        "features": ["24-Hour Offers", "No Obligation", "Fair Market Value"]
+        "title": "Roof Replacement",
+        "description": "Complete roof replacement using top-tier shingles, metal, or flat roofing systems. We handle permits and cleanup.",
+        "icon": "Home",
+        "tag": "New Roof",
+        "features": ["Free Estimate", "Material Choices", "Full Warranty"]
       },
       {
         "number": "02",
-        "title": "Foreclosure Prevention",
-        "description": "Facing foreclosure? We provide tailored options to help you get paid and move on from your property. Stop the stress and get a fresh start.",
+        "title": "Emergency Roof Repair",
+        "description": "24/7 emergency tarping and repair for storm damage, leaks, and fallen trees. Fast response to protect your home.",
         "icon": "Shield",
-        "tag": "Foreclosure",
-        "features": ["Stop Foreclosure", "Credit Protection", "Debt Relief"]
+        "tag": "24/7",
+        "features": ["Rapid Response", "Insurance Help", "Temporary Fixes"]
       },
       {
         "number": "03",
-        "title": "We Buy As-Is Homes",
-        "description": "No repairs needed. We buy homes in any condition—fixer-uppers, outdated properties, or homes needing major renovations.",
-        "icon": "Home",
-        "tag": "As-Is",
-        "features": ["No Repairs", "No Cleaning", "No Inspections"]
+        "title": "Siding & Windows",
+        "description": "Energy-efficient siding and window replacement. Boost curb appeal and lower energy bills.",
+        "icon": "Building",
+        "tag": "Exteriors",
+        "features": ["Vinyl, Wood, Fiber", "Energy Star", "Custom Colors"]
       },
       {
         "number": "04",
-        "title": "Inherited Property Solutions",
-        "description": "Sell inherited homes quickly without the stress of repairs, probate delays, or carrying costs. Get cash fast and move on.",
-        "icon": "Heart",
-        "tag": "Inherited",
-        "features": ["Probate Help", "Estate Sales", "Quick Closing"]
+        "title": "Gutter Installation",
+        "description": "Seamless gutter systems and gutter guards to protect your foundation and landscaping.",
+        "icon": "Home",
+        "tag": "Gutters",
+        "features": ["Seamless", "Leaf Guards", "Downspouts"]
       },
       {
         "number": "05",
-        "title": "Avoid Realtor Commissions",
-        "description": "Sell directly to us and save thousands in realtor commissions and closing costs. What you see is what you get.",
-        "icon": "Percent",
-        "tag": "No Fees",
-        "features": [
-          "Zero Commissions",
-          "No Closing Costs",
-          "More Cash for You"
-        ]
+        "title": "Deck & Patio Building",
+        "description": "Custom decks, patios, and outdoor living spaces. Perfect for entertaining or relaxing.",
+        "icon": "Home",
+        "tag": "Outdoor",
+        "features": ["Composite/Wood", "Permits Included", "Custom Design"]
       },
       {
         "number": "06",
-        "title": "Rental Property Exit",
-        "description": "Done being a landlord? Sell your rental property fast with our hassle-free cash offer. No tenants to evict, no repairs needed.",
+        "title": "Interior Remodeling",
+        "description": "Kitchen, bathroom, and basement renovations. Full-service construction from design to finish.",
         "icon": "Building",
-        "tag": "Investors",
-        "features": ["Tenant-Occupied OK", "Quick Cash Out", "No Showings"]
+        "tag": "Renovations",
+        "features": ["Tile, Cabinets", "Plumbing", "Electrical"]
       }
     ],
     "cta": {
-      "title": "Ready for Your Cash Offer?",
-      "description": "Fill out our simple 3-step form and get a fair cash offer today. No obligations, no hidden fees—just a fast, hassle-free sale.",
-      "buttonText": "Get Cash Offer",
+      "title": "Ready for Your Free Estimate?",
+      "description": "Contact us today to schedule a no-obligation inspection or quote. Fast, friendly, and professional service.",
+      "buttonText": "Get Free Quote",
       "buttonLink": "#contact"
     }
   },
   "leadership": {
     "section": {
       "badge": "Our Team",
-      "headline": "Local Experts Committed to <span class=\"font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80\">Helping Homeowners</span>",
-      "description": "We're Michigan-based investors who understand the local market and are dedicated to providing fair, fast solutions for homeowners in any situation."
+      "headline": "Local Experts Committed to <span class=\"font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80\">Quality Craftsmanship</span>",
+      "description": "We're a family-owned business with deep roots in the community, dedicated to honest work and lasting relationships."
     },
     "ceo": {
-      "name": "Ricky Steele",
-      "title": "Founder • Right Now Home Buyers",
-      "image": "Ricky Steele",
-      "alt": "Ricky Steele - Founder, Right Now Home Buyers",
+      "name": "Ryan Orr",
+      "title": "Owner • Orr Roofing & Construction",
+      "image": "Ryan Orr",
+      "alt": "Ryan Orr - Owner, Orr Roofing & Construction",
       "badges": {
         "top": "LOCAL EXPERT",
-        "bottom": "Michigan • Cash Offers"
+        "bottom": "Licensed • Insured"
       },
       "quotes": [
-        "Right Now Home Buyers was founded to help homeowners find real solutions when they need them most. We're here to make selling your home fast, fair, and hassle-free."
+        "Orr Roofing was built on the values of hard work, integrity, and putting customers first. We treat every home like it's our own."
       ],
       "description": [
-        "With years of experience in the Michigan real estate market, Ricky Steele saw how traditional home selling left many homeowners struggling with delays, repairs, and high commissions.",
-        "Right Now Home Buyers is the solution—a trusted, reliable partner that delivers cash quickly and effortlessly. Every day, we help homeowners find real solutions that fit their unique situation—no gimmicks, no delays, and no unnecessary headaches."
+        "With over 20 years in the construction industry, Ryan Orr saw how many homeowners were overcharged or left with poor workmanship. He started Orr Roofing & Construction to provide honest, reliable service at fair prices.",
+        "Today, our team continues that mission—delivering top-quality roofing and construction with clear communication, no pressure, and work we're proud to stand behind."
       ],
       "social": {
         "linkedin": "#",
-        "email": "ricky@rnhbuyers.com"
+        "email": "ryan@orrroofing.com"
       }
     }
   },
   "portfolio": {
     "section": {
-      "badge": "Success Stories",
-      "headline": "Homes We've <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70\">Helped Sell</span>"
+      "badge": "Recent Work",
+      "headline": "Projects We've <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70\">Completed</span>"
     },
     "projects": [
       {
         "number": "01",
-        "title": "Canton Family Home",
-        "category": "Cash Purchase",
-        "image": "home1",
-        "location": "Canton, MI",
+        "title": "Colonial Roof Replacement",
+        "category": "Asphalt Shingles",
+        "image": "project1",
+        "location": "Ann Arbor, MI",
         "year": "2024",
         "accent": "from-primary to-primary/80",
-        "scope": "Same Day Offer",
-        "desc": "Helped a family avoid foreclosure with a fast cash offer and 14-day closing."
+        "scope": "Full Tear-Off",
+        "desc": "Complete roof replacement with architectural shingles and new gutters."
       },
       {
         "number": "02",
-        "title": "Inherited Property",
-        "category": "Estate Sale",
-        "image": "home2",
-        "location": "Livonia, MI",
+        "title": "Modern Deck Build",
+        "category": "Composite Decking",
+        "image": "project2",
+        "location": "Canton, MI",
         "year": "2024",
         "accent": "from-primary to-primary/70",
-        "scope": "As-Is Purchase",
-        "desc": "Bought an inherited home as-is, saving the family from costly repairs and probate delays."
+        "scope": "Custom Design",
+        "desc": "Multi-level composite deck with built-in seating and lighting."
       },
       {
         "number": "03",
-        "title": "Fixer-Upper Sale",
-        "category": "As-Is",
-        "image": "home3",
-        "location": "Westland, MI",
+        "title": "Storm Repair",
+        "category": "Emergency Tarp & Repair",
+        "image": "project3",
+        "location": "Livonia, MI",
         "year": "2024",
         "accent": "from-primary/90 to-primary/60",
-        "scope": "No Repairs",
-        "desc": "Purchased a fixer-upper in any condition—no repairs, no cleaning, just a fair cash offer."
+        "scope": "Insurance Claim",
+        "desc": "Emergency response after hailstorm. Full roof and siding repair."
       },
       {
         "number": "04",
-        "title": "Rental Property Exit",
-        "category": "Investor Sale",
-        "image": "home4",
+        "title": "Kitchen Remodel",
+        "category": "Interior Renovation",
+        "image": "project4",
         "location": "Plymouth, MI",
         "year": "2023",
         "accent": "from-primary to-primary/80",
-        "scope": "Tenant-Occupied",
-        "desc": "Bought a rental property with tenants, allowing the owner to cash out quickly."
+        "scope": "Full Gut",
+        "desc": "Complete kitchen renovation with custom cabinets and quartz counters."
       },
       {
         "number": "05",
-        "title": "Pre-Foreclosure Rescue",
-        "category": "Foreclosure Help",
-        "image": "home5",
-        "location": "Wayne County, MI",
+        "title": "Metal Roof Install",
+        "category": "Standing Seam",
+        "image": "project5",
+        "location": "Northville, MI",
         "year": "2024",
         "accent": "from-primary/80 to-primary/60",
-        "scope": "Fast Closing",
-        "desc": "Helped a homeowner stop foreclosure and get cash in hand in just 10 days."
+        "scope": "Premium Metal",
+        "desc": "Energy-efficient standing seam metal roof with 50-year warranty."
       }
     ],
     "button": {
-      "text": "View All Success Stories",
+      "text": "View All Projects",
       "link": "#portfolio"
     }
   },
   "testimonials": {
     "section": {
-      "badge": "Client Testimonials",
-      "headline": "What Our Clients Say",
-      "description": "Real stories from homeowners who sold their homes fast with Right Now Home Buyers",
+      "badge": "Client Reviews",
+      "headline": "What Our Customers Say",
+      "description": "Real feedback from homeowners who chose Orr Roofing & Construction.",
       "featured": "⭐️⭐️⭐️⭐️⭐️ Rated on Google"
     },
     "testimonials": [
       {
         "id": 1,
-        "name": "Sarah",
+        "name": "Linda",
         "position": "Homeowner",
         "company": "Canton, MI",
-        "avatar": "S",
+        "avatar": "L",
         "videoId": null,
         "duration": null,
         "views": null,
-        "text": "Right Now Home Buyers gave me the fresh start I desperately needed. I was facing foreclosure, overwhelmed by the stress and uncertainty, but their team made the whole process so easy. They bought my home quickly, and I didn't have to worry about repairs or fees. I'm so thankful for their professionalism and understanding. If you're struggling, don't hesitate—this company truly cares!"
+        "text": "Orr Roofing did a fantastic job on our new roof. The crew was professional, cleaned up everything, and finished ahead of schedule. Ryan walked us through the whole process and helped with our insurance claim. Highly recommend!"
       },
       {
         "id": 2,
-        "name": "Michael",
+        "name": "Tom",
         "position": "Homeowner",
         "company": "Livonia, MI",
-        "avatar": "M",
+        "avatar": "T",
         "videoId": null,
         "duration": null,
         "views": null,
-        "text": "Right Now Home Buyers really came to my rescue when I was behind on my mortgage and facing foreclosure. The team was incredibly understanding, professional, and fast. They made the entire process easy, and I closed on my home in just a couple of weeks. I'm so relieved to have this behind me and to have a fresh start. Thank you!"
+        "text": "Had a leak during a storm and they came out the same day. Tarped it temporarily and came back the next week for permanent repair. Fair price and great communication."
       },
       {
         "id": 3,
@@ -410,29 +406,29 @@
         "videoId": null,
         "duration": null,
         "views": null,
-        "text": "I can't thank Right Now Home Buyers enough for helping me avoid foreclosure. Their cash offer was fair, and they closed on my home faster than I ever imagined. No hidden fees, no long delays—just a quick and easy sale. Now I'm free to move forward with my life. If you're in a tough spot, they're the ones to call!"
+        "text": "They built a beautiful deck for us. The team was respectful, cleaned up daily, and the quality is outstanding. We're already planning our kitchen remodel with them."
       },
       {
         "id": 4,
         "name": "David",
-        "position": "Homeowner",
-        "company": "Plymouth, MI",
+        "position": "Property Manager",
+        "company": "Ann Arbor, MI",
         "avatar": "D",
         "videoId": null,
         "duration": null,
         "views": null,
-        "text": "I inherited my parents' home and didn't know what to do with it. Right Now Home Buyers made the whole process simple. They bought it as-is, handled all the paperwork, and I had cash in hand in less than two weeks. Highly recommend!"
+        "text": "We use Orr Roofing for all our rental properties. Reliable, fair pricing, and they always show up when they say they will. Great partner."
       },
       {
         "id": 5,
         "name": "Jennifer",
         "position": "Homeowner",
-        "company": "Canton, MI",
+        "company": "Northville, MI",
         "avatar": "J",
         "videoId": null,
         "duration": null,
         "views": null,
-        "text": "Best decision I ever made was calling Right Now Home Buyers. No realtor fees, no waiting months for a buyer. Got a fair cash offer and closed in 10 days. The team was professional, kind, and truly helpful."
+        "text": "From the free estimate to final cleanup, everything was professional. The new windows have made such a difference in our energy bills. Highly recommend Orr Construction."
       }
     ],
     "videos": [],
@@ -444,77 +440,77 @@
   },
   "whyChooseUs": {
     "section": {
-      "badge": "WHY CHOOSE RIGHT NOW HOME BUYERS",
-      "headline": "The Trusted Choice for <span class=\"text-primary\">Fast Home Sales</span>",
-      "description": "Homeowners choose Right Now Home Buyers because we deliver fair cash offers, fast closings, and a truly hassle-free experience."
+      "badge": "WHY CHOOSE ORR ROOFING & CONSTRUCTION",
+      "headline": "The Trusted Choice for <span class=\"text-primary\">Home Exteriors & Renovations</span>",
+      "description": "Homeowners trust us because we deliver quality work, clear estimates, and stand behind everything we do."
     },
     "features": [
       {
         "icon": "DollarSign",
-        "title": "Fair Cash Offers",
-        "description": "We provide competitive, no-obligation cash offers based on your home's true value—no lowball offers, no games."
+        "title": "Free Estimates",
+        "description": "No-obligation, detailed quotes for any roofing or construction project. Know the cost before we start."
       },
       {
         "icon": "Clock",
-        "title": "Same Day Offers",
-        "description": "Get a cash offer within 24 hours of submitting your information. No waiting weeks for a response."
+        "title": "Fast Emergency Service",
+        "description": "24/7 emergency repairs. We'll be there within 24 hours to protect your home from further damage."
       },
       {
         "icon": "Shield",
-        "title": "Zero Commissions & Fees",
-        "description": "Sell directly to us and save thousands in realtor commissions, closing costs, and hidden fees. What you see is what you get."
+        "title": "Licensed & Insured",
+        "description": "Fully licensed, bonded, and insured for your protection. Workers' comp and liability coverage."
       },
       {
         "icon": "Home",
-        "title": "Buy Homes As-Is",
-        "description": "No repairs, no cleaning, no staging. We buy homes in any condition—fixer-uppers, outdated properties, or homes needing major work."
+        "title": "Warranty on All Work",
+        "description": "Manufacturer warranties plus our own workmanship warranty. We stand behind every job."
       },
       {
         "icon": "Heart",
-        "title": "Foreclosure & Probate Experts",
-        "description": "Specialized experience helping homeowners facing foreclosure or selling inherited properties. We understand your situation."
+        "title": "Insurance Claim Help",
+        "description": "We work directly with your insurance company to make storm damage claims smooth and stress-free."
       },
       {
         "icon": "Building",
-        "title": "Local Michigan Experts",
-        "description": "We know the Michigan market inside and out. Our local expertise ensures a smooth transaction and fair pricing."
+        "title": "Local Family Business",
+        "description": "Proudly serving our neighbors for over 20 years. We're not a franchise—just locals who care."
       }
     ],
     "stats": [
       {
-        "value": "500",
+        "value": "1000",
         "suffix": "+",
-        "label": "Homes Bought"
+        "label": "Projects Done"
       },
       {
         "value": "24",
         "suffix": "hr",
-        "label": "Fast Offers"
+        "label": "Emergency"
       },
       {
         "value": "100",
         "suffix": "%",
-        "label": "Hassle-Free"
+        "label": "Licensed"
       },
       {
-        "value": "No",
-        "suffix": "Fees",
-        "label": "Zero Commissions"
+        "value": "Free",
+        "suffix": "Estimates",
+        "label": "Always"
       }
     ],
     "cta": {
-      "badge": "GET CASH NOW",
-      "title": "Sell Your Home <span class=\"text-primary block mt-2\">In Just Days!</span>",
-      "description": "Fill out our simple 3-step form and get a fair cash offer today. No obligations, no hidden fees—just a fast, hassle-free sale.",
-      "trustBadges": ["Local Experts", "Cash Offers", "No Fees"],
+      "badge": "FREE QUOTE",
+      "title": "Get Your <span class=\"text-primary block mt-2\">Free Estimate Today</span>",
+      "description": "Call or fill out our form for a no-pressure, detailed quote. We'll inspect, advise, and give you honest options.",
+      "trustBadges": ["Licensed", "Insured", "Free Estimates"],
       "buttons": [
         {
-          "text": "Get Cash Offer",
+          "text": "Free Estimate",
           "href": "#contact",
           "primary": true
         },
         {
-          "text": "Success Stories",
+          "text": "View Projects",
           "href": "#portfolio",
           "primary": false
         }
@@ -525,7 +521,7 @@
     "section": {
       "badge": "Knowledge Base",
       "headline": "Frequently Asked Questions",
-      "description": "Answers to common questions about selling your home fast for cash in Michigan."
+      "description": "Answers to common questions about roofing, construction, and working with our team."
     },
     "categories": [
       {
@@ -544,57 +540,57 @@
         "icon": "Clock"
       },
       {
-        "id": "foreclosure",
-        "label": "Foreclosure",
+        "id": "insurance",
+        "label": "Insurance",
         "icon": "Shield"
       },
       {
-        "id": "inherited",
-        "label": "Inherited",
-        "icon": "Heart"
+        "id": "repairs",
+        "label": "Repairs",
+        "icon": "Tool"
       }
     ],
     "items": [
       {
         "id": 1,
         "category": "general",
-        "question": "How does the process work?",
-        "answer": "It's simple! 1) Fill out our online form with basic details about your property. 2) We review your submission and provide a fair cash offer within 24 hours. 3) If you accept, we handle everything—paperwork, closing, and you get paid in as little as a few days!",
+        "question": "How do I get a free estimate?",
+        "answer": "Simply call us or fill out the form on this page. We'll schedule a time to inspect your property and provide a detailed, written estimate at no cost or obligation.",
         "metadata": [
           {
-            "label": "Timeline",
-            "value": "24hr offer, 7-14 day close"
+            "label": "Response",
+            "value": "Within 24hr"
           }
         ],
         "links": [
           {
-            "label": "Get started",
-            "url": "/quote"
+            "label": "Get free estimate",
+            "url": "#quote"
           }
         ]
       },
       {
         "id": 2,
         "category": "general",
-        "question": "Do I need to make repairs before selling?",
-        "answer": "No! We buy homes as-is. Whether your home needs major repairs, is outdated, or just needs a little TLC, we'll buy it in its current condition. No inspections, no repairs, no cleaning required.",
+        "question": "Are you licensed and insured?",
+        "answer": "Yes! We are fully licensed, bonded, and insured. We carry general liability and workers' compensation insurance for your protection.",
         "metadata": [
           {
-            "label": "Condition",
-            "value": "Any condition accepted"
+            "label": "License",
+            "value": "Full"
           }
         ],
         "links": []
       },
       {
         "id": 3,
-        "category": "general",
-        "question": "Are there any fees or commissions?",
-        "answer": "Absolutely not. We pay all closing costs and there are zero realtor commissions. The offer we make is the amount you walk away with—no hidden fees, no surprises.",
+        "category": "process",
+        "question": "How long does a roof replacement take?",
+        "answer": "Most residential roof replacements take 1-3 days, depending on size, complexity, and weather. We'll give you a clear timeline before starting.",
         "metadata": [
           {
-            "label": "Fees",
-            "value": "$0"
+            "label": "Typical",
+            "value": "1-3 days"
           }
         ],
         "links": []
@@ -602,43 +598,43 @@
       {
         "id": 4,
         "category": "general",
-        "question": "How fast can you close?",
-        "answer": "We can close in as little as 7-14 days, depending on your timeline. Need to close faster? We can work with you to accommodate urgent situations.",
+        "question": "Do you offer warranties?",
+        "answer": "Yes. We offer manufacturer warranties on materials (20-50 years depending on product) plus our own workmanship warranty. Details provided with your estimate.",
         "metadata": [
           {
-            "label": "Fastest close",
-            "value": "7 days"
+            "label": "Workmanship",
+            "value": "5+ years"
           }
         ],
         "links": []
       },
       {
         "id": 5,
-        "category": "foreclosure",
-        "question": "Can you help if I'm facing foreclosure?",
-        "answer": "Yes! We specialize in helping homeowners facing foreclosure. We can help you stop the foreclosure process, get cash for your home, and move on with a fresh start. Contact us immediately to discuss your options.",
+        "category": "insurance",
+        "question": "Do you help with insurance claims?",
+        "answer": "Absolutely. We can inspect your roof for storm damage, document everything, and meet with your adjuster to ensure you get a fair claim settlement.",
         "metadata": [
           {
             "label": "Service",
-            "value": "Foreclosure help"
+            "value": "Claims assistance"
           }
         ],
         "links": [
           {
             "label": "Get help now",
-            "url": "/contact"
+            "url": "#contact"
           }
         ]
       },
       {
         "id": 6,
-        "category": "inherited",
-        "question": "How do I sell an inherited property?",
-        "answer": "Selling an inherited home is simple with us. We'll buy the property as-is, handle all the paperwork, and help navigate any probate issues. You don't need to clean out the house or make any repairs—just accept our cash offer and we'll take care of the rest.",
+        "category": "repairs",
+        "question": "Do you offer emergency tarping?",
+        "answer": "Yes, 24/7. If your roof is actively leaking or damaged, call our emergency line. We'll come out to tarp and stabilize until permanent repairs can be made.",
         "metadata": [
           {
-            "label": "Inherited",
-            "value": "Specialized help"
+            "label": "Response",
+            "value": "Same day"
           }
         ],
         "links": []
@@ -646,25 +642,25 @@
       {
         "id": 7,
         "category": "process",
-        "question": "Is the cash offer really no-obligation?",
-        "answer": "Yes! Our offers are completely no-obligation. You're free to review our offer, compare it to other options, and make the best decision for your situation. No pressure, no gimmicks.",
+        "question": "Do I need to be home during the work?",
+        "answer": "Not necessarily. Many customers give us access and we handle everything. We'll communicate daily and you can check progress online or by phone.",
         "metadata": [
           {
-            "label": "Obligation",
-            "value": "None"
+            "label": "Access",
+            "value": "Flexible"
           }
         ],
         "links": []
       },
       {
         "id": 8,
-        "category": "process",
+        "category": "general",
         "question": "What areas do you serve?",
-        "answer": "We serve the entire Metro Detroit area including Wayne County, Oakland County, Macomb County, and surrounding Michigan communities. Contact us to see if we buy homes in your area.",
+        "answer": "We serve Metro Detroit including Wayne, Oakland, and Macomb counties. Contact us to confirm if we cover your specific city.",
         "metadata": [
           {
-            "label": "Service Area",
-            "value": "Metro Detroit & SE Michigan"
+            "label": "Area",
+            "value": "SE Michigan"
           }
         ],
         "links": []
@@ -672,12 +668,12 @@
       {
         "id": 9,
         "category": "general",
-        "question": "Do you buy homes with tenants?",
-        "answer": "Yes! If you're a landlord looking to sell a rental property, we'll buy it even with tenants in place. No need to evict or wait for leases to end.",
+        "question": "Do you do commercial roofing?",
+        "answer": "Yes! We handle flat roofs, TPO, EPDM, and metal roofing for commercial and industrial buildings.",
         "metadata": [
           {
-            "label": "Tenants",
-            "value": "OK"
+            "label": "Commercial",
+            "value": "Yes"
           }
         ],
         "links": []
@@ -685,12 +681,12 @@
       {
         "id": 10,
         "category": "general",
-        "question": "Will I get a fair price for my home?",
-        "answer": "Absolutely. We provide competitive cash offers based on your home's fair market value. While you may get slightly more by listing with an agent (after paying commissions and waiting months), we offer a fast, guaranteed sale with no fees and no waiting.",
+        "question": "What payment methods do you accept?",
+        "answer": "We accept check, credit card, and financing options are available for qualified customers. We'll discuss payment terms in your estimate.",
         "metadata": [
           {
-            "label": "Value",
-            "value": "Fair market offers"
+            "label": "Financing",
+            "value": "Available"
           }
         ],
         "links": []
@@ -698,154 +694,158 @@
     ],
     "knowledgeCard": {
       "title": "Still have questions?",
-      "description": "Our team is ready to help with your specific situation.",
+      "description": "Our team is ready to help with your specific roofing or construction needs.",
       "buttonText": "Contact Our Team",
-      "buttonLink": "/contact"
+      "buttonLink": "#contact"
     }
   },
   "quote": {
     "section": {
-      "badge": "GET YOUR CASH OFFER IN SECONDS",
-      "headline": "Request Your <span class=\"font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-primary/80\">Free Cash Offer</span>",
-      "description": "Fill out our simple 3-step form and get a fair cash offer today. No obligations, no hidden fees—just a fast, hassle-free sale."
+      "badge": "FREE ESTIMATE",
+      "headline": "Request Your <span class=\"font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-primary/80\">Free Project Quote</span>",
+      "description": "Fill out the form or call us for a no-obligation, detailed estimate. We'll get back to you within 24 hours."
     },
     "services": [
       {
         "id": 1,
-        "title": "Single Family Home",
-        "desc": "Any condition accepted",
+        "title": "Roof Replacement",
+        "desc": "Free inspection & quote",
         "icon": "🏠"
       },
       {
         "id": 2,
-        "title": "Townhouse / Condo",
-        "desc": "Fast cash offers",
-        "icon": "🏘️"
+        "title": "Roof Repair",
+        "desc": "Emergency service available",
+        "icon": "🔧"
       },
       {
         "id": 3,
-        "title": "Multi-Family",
-        "desc": "Up to 4 units",
+        "title": "Siding",
+        "desc": "Vinyl, wood, fiber cement",
         "icon": "🏢"
       },
       {
         "id": 4,
-        "title": "Fixer-Upper",
-        "desc": "No repairs needed",
-        "icon": "🔨"
+        "title": "Windows",
+        "desc": "Energy efficient",
+        "icon": "🪟"
       },
       {
         "id": 5,
-        "title": "Inherited Property",
-        "desc": "Probate help available",
-        "icon": "❤️"
+        "title": "Deck/Patio",
+        "desc": "Custom outdoor living",
+        "icon": "🪵"
       },
       {
         "id": 6,
-        "title": "Foreclosure",
-        "desc": "Stop the process",
-        "icon": "🛡️"
+        "title": "Interior Remodel",
+        "desc": "Kitchen, bath, basement",
+        "icon": "🔨"
       }
     ],
     "projectTypes": [
       {
-        "value": "single-family",
-        "label": "Single Family Home"
+        "value": "roof-replace",
+        "label": "Roof Replacement"
       },
       {
-        "value": "townhouse",
-        "label": "Townhouse / Condo"
+        "value": "roof-repair",
+        "label": "Roof Repair"
       },
       {
-        "value": "multi-family",
-        "label": "Multi-Family (2-4 units)"
+        "value": "siding",
+        "label": "Siding"
       },
       {
-        "value": "inherited",
-        "label": "Inherited Property"
+        "value": "windows",
+        "label": "Windows"
       },
       {
-        "value": "foreclosure",
-        "label": "Foreclosure Help"
+        "value": "deck",
+        "label": "Deck or Patio"
+      },
+      {
+        "value": "interior",
+        "label": "Interior Remodel"
       }
     ],
     "timelines": [
       {
-        "value": "urgent",
-        "label": "Urgent (within 2 weeks)"
+        "value": "emergency",
+        "label": "Emergency (within 48hr)"
       },
       {
-        "value": "standard",
-        "label": "Standard (2-4 weeks)"
+        "value": "soon",
+        "label": "Soon (1-2 weeks)"
       },
       {
-        "value": "flexible",
-        "label": "Flexible (1-3 months)"
+        "value": "planned",
+        "label": "Planning (1-3 months)"
       }
     ],
-    "email": "ricky@rnhbuyers.com",
+    "email": "ryan@orrroofing.com",
     "success": {
       "title": "Request Received",
-      "message": "Thank you for contacting Right Now Home Buyers.",
-      "response": "We'll contact you within 24 hours with your cash offer.",
+      "message": "Thank you for contacting Orr Roofing & Construction.",
+      "response": "We'll reach out within 24 hours to schedule your free estimate.",
       "buttonText": "Close"
     }
   },
   "footer": {
     "company": {
-      "name": "Right Now Home Buyers",
-      "tagline": "SAME DAY CASH OFFERS!",
-      "description": "Michigan's trusted home buyer providing fast, fair cash offers for homes in any condition. We specialize in foreclosure help, inherited properties, and hassle-free home sales."
+      "name": "Orr Roofing & Construction",
+      "tagline": "FREE ESTIMATES • LICENSED • INSURED",
+      "description": "Family-owned and operated since 2004. We provide quality roofing, siding, windows, decks, and interior remodeling with honest pricing and guaranteed workmanship."
     },
     "services": {
       "title": "Our Services",
       "main": [
         {
-          "label": "Cash Offers",
-          "href": "/cash-offers",
-          "icon": "DollarSign"
-        },
-        {
-          "label": "Foreclosure Help",
-          "href": "/foreclosure",
-          "icon": "Shield"
-        },
-        {
-          "label": "Inherited Properties",
-          "href": "/inherited",
-          "icon": "Heart"
-        },
-        {
-          "label": "As-Is Home Buying",
-          "href": "/as-is",
+          "label": "Roof Replacement",
+          "href": "/roof-replacement",
           "icon": "Home"
         },
         {
-          "label": "Rental Property Exit",
-          "href": "/rental-property",
+          "label": "Roof Repair",
+          "href": "/roof-repair",
+          "icon": "Tool"
+        },
+        {
+          "label": "Siding",
+          "href": "/siding",
           "icon": "Building"
         },
         {
-          "label": "Probate Properties",
-          "href": "/probate",
-          "icon": "FileText"
+          "label": "Windows",
+          "href": "/windows",
+          "icon": "Home"
         },
         {
-          "label": "Free Cash Offer",
-          "href": "/offer",
-          "icon": "ClipboardCheck"
+          "label": "Decks & Patios",
+          "href": "/decks",
+          "icon": "Home"
+        },
+        {
+          "label": "Interior Remodel",
+          "href": "/remodel",
+          "icon": "Home"
+        },
+        {
+          "label": "Free Estimate",
+          "href": "/estimate",
+          "icon": "DollarSign"
         }
       ],
       "materials": {
         "title": "Quick Links",
         "items": [
           {
-            "label": "How It Works",
+            "label": "How We Work",
             "href": "/how-it-works"
           },
           {
-            "label": "Success Stories",
-            "href": "/stories"
+            "label": "Our Projects",
+            "href": "/projects"
           },
           {
             "label": "FAQ",
@@ -860,37 +860,37 @@
     },
     "contact": {
       "title": "Contact Us",
-      "email": "ricky@rnhbuyers.com",
-      "phone": "+1 734-205-1343",
+      "email": "ryan@orrroofing.com",
+      "phone": "+1 214-284-3212",
       "address": "46036 Michigan Ave. Suite 165 Canton, MI 48188",
-      "emergency": "24/7 Emergency Assistance Available",
+      "emergency": "24/7 Emergency Roof Repair Available",
       "areas": "Serving Metro Detroit & Southeast Michigan: Wayne County, Oakland County, Macomb County, and surrounding areas."
     },
     "certifications": [
       {
-        "cert": "Local Experts",
-        "number": "Michigan Based",
-        "icon": "Star"
-      },
-      {
-        "cert": "Cash Offers",
-        "number": "Same Day",
-        "icon": "Clock"
-      },
-      {
-        "cert": "No Fees",
-        "number": "Zero Commissions",
+        "cert": "Licensed",
+        "number": "State of Michigan",
         "icon": "Shield"
       },
       {
-        "cert": "Fast Closing",
-        "number": "7-14 Days",
-        "icon": "Rocket"
+        "cert": "Insured",
+        "number": "Full Coverage",
+        "icon": "Shield"
       },
       {
-        "cert": "As-Is",
-        "number": "Any Condition",
-        "icon": "Home"
+        "cert": "Free Estimates",
+        "number": "No Obligation",
+        "icon": "DollarSign"
+      },
+      {
+        "cert": "Warranty",
+        "number": "Workmanship",
+        "icon": "Star"
+      },
+      {
+        "cert": "Emergency",
+        "number": "24/7 Service",
+        "icon": "Clock"
       }
     ],
     "quickLinks": [
@@ -900,8 +900,8 @@
         "icon": "Users"
       },
       {
-        "label": "Success Stories",
-        "href": "/stories",
+        "label": "Projects",
+        "href": "/projects",
         "icon": "Star"
       },
       {
@@ -922,23 +922,23 @@
     ],
     "social": [
       {
-        "platform": "Instagram",
-        "icon": "Instagram",
-        "href": "#"
-      },
-      {
         "platform": "Facebook",
         "icon": "Facebook",
         "href": "#"
       },
       {
-        "platform": "TikTok",
-        "icon": "TikTok",
+        "platform": "Instagram",
+        "icon": "Instagram",
+        "href": "#"
+      },
+      {
+        "platform": "Houzz",
+        "icon": "Home",
         "href": "#"
       }
     ],
     "bottom": {
-      "copyright": "© 2025 Right Now Home Buyers",
+      "copyright": "© 2025 Orr Roofing & Construction",
       "rights": "All rights reserved.",
       "links": [
         {
@@ -954,25 +954,25 @@
           "href": "/sitemap"
         }
       ],
-      "tagline": "Powered By Dynamic Designs"
+      "tagline": "Mansoor Shah | Helping Roofers Grow Online"
     },
     "marquee": {
       "texts": [
-        "SAME DAY CASH OFFERS",
-        "WE BUY HOMES AS-IS",
-        "NO REALTOR COMMISSIONS",
-        "FAST CLOSING",
-        "FORECLOSURE HELP AVAILABLE"
+        "FREE ESTIMATES",
+        "LICENSED & INSURED",
+        "24/7 EMERGENCY REPAIRS",
+        "WORKMANSHIP WARRANTY",
+        "FAMILY OWNED"
       ]
     }
   },
   "hours": {
-    "monday": "09:00 AM – 06:00 PM",
-    "tuesday": "09:00 AM – 06:00 PM",
-    "wednesday": "09:00 AM – 06:00 PM",
-    "thursday": "09:00 AM – 06:00 PM",
-    "friday": "09:00 AM – 06:00 PM",
-    "saturday": "10:00 AM – 03:00 PM",
-    "sunday": "Closed"
+    "monday": "08:00 AM – 06:00 PM",
+    "tuesday": "08:00 AM – 06:00 PM",
+    "wednesday": "08:00 AM – 06:00 PM",
+    "thursday": "08:00 AM – 06:00 PM",
+    "friday": "08:00 AM – 06:00 PM",
+    "saturday": "09:00 AM – 02:00 PM",
+    "sunday": "Closed (Emergency only)"
   }
 }

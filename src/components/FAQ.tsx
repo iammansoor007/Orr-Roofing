@@ -515,7 +515,7 @@ const CategoryFilter = ({ categories, activeCategory, onCategoryChange }: { cate
             className={`
               relative px-4 py-2 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm font-medium transition-all duration-300
               ${activeCategory === category.id
-                ? 'text-primary-foreground'
+                ? 'text-white'
                 : 'text-muted-foreground hover:text-card-foreground bg-card/50 hover:bg-primary/5'
               }
             `}

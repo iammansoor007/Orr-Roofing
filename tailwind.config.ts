@@ -16,7 +16,6 @@ export default {
       fontFamily: {
         heading: ['Space Grotesk', 'sans-serif'],
         body: ['DM Sans', 'sans-serif'],
-        accent: ['DM Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -31,10 +30,6 @@ export default {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -52,12 +47,6 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        deep: "hsl(var(--deep))",
-        surface: {
-          DEFAULT: "hsl(var(--surface))",
-          light: "hsl(var(--surface-light))",
-        },
-        "text-dark": "hsl(var(--text-dark))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -68,14 +57,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // American Flag Colors - Direct hex values for custom use
-        american: {
-          red: "#E32B2B",
-          navy: "#1A2A4A",
-          white: "#FFFFFF",
-          blue: "#002664", // Deeper navy blue option
-          scarlet: "#B22234", // Alternative red
-        },
+        // Custom colors with strong contrast
+        'dark-gold': '#9B7B1C',
+        'rich-gold': '#B8960C',
+        'light-gold': '#D4AF37',
+        'black-pure': '#000000',
+        'white-pure': '#FFFFFF',
+        'gray-dark': '#333333',
+        'gray-medium': '#666666',
+        'gray-light': '#999999',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -99,17 +89,12 @@ export default {
           from: { transform: "translateY(20px)", opacity: "0" },
           to: { transform: "translateY(0)", opacity: "1" },
         },
-        "pulse-subtle": {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.8" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
         "accordion-up": "accordion-up 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
         "fade-in": "fade-in 0.5s ease-out",
         "slide-up": "slide-up 0.6s ease-out",
-        "pulse-subtle": "pulse-subtle 2s ease-in-out infinite",
       },
     },
   },

@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import heroBg from "@/assets/herobg.jpg";
+import heroBg from "@/assets/orrhero.png"; // CHANGE: new roofing background image
 import {
   FiArrowRight,
   FiChevronDown,
@@ -23,37 +23,38 @@ import {
   FiZap,
   FiClock,
   FiShield,
+  FiTool,
+  FiSun,
+  FiCloudRain,
+  FiAward,
 } from "react-icons/fi";
 import { RiBuildingLine, RiShieldCheckLine } from "react-icons/ri";
 import completeData from "../src/data/completeData.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Modern Professional Form Component - IMPROVED WITH EQUAL HEIGHT
-const InquiryForm = () => {
+// MODERN PROFESSIONAL FORM COMPONENT - UPDATED FOR ROOFING SERVICES
+const RoofingInquiryForm = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    inquiryType: "buying",
-    inquiryDetails: "",
+    serviceType: "roof-replacement",
+    serviceDetails: "",
     email: "",
     phone: "",
+    address: "",
+    urgency: "standard",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Fixed container ref for height consistency
   const containerRef = useRef<HTMLDivElement>(null);
   const [containerHeight, setContainerHeight] = useState(520);
 
-  // Measure and fix height after step changes - ENSURE EQUAL HEIGHT
   useEffect(() => {
     if (containerRef.current) {
-      // Get the height of the current content
       const height = containerRef.current.scrollHeight;
-      // Set a consistent minimum height that accommodates all steps
-      // Step 1: ~440px, Step 2: ~480px, Step 3: ~460px
       setContainerHeight(Math.max(height, 500));
     }
   }, [step, isSubmitted]);
@@ -73,7 +74,7 @@ const InquiryForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log("Form submitted:", formData);
+    console.log("Roofing quote request:", formData);
     setIsSubmitting(false);
     setIsSubmitted(true);
     setTimeout(() => {
@@ -82,58 +83,79 @@ const InquiryForm = () => {
       setFormData({
         firstName: "",
         lastName: "",
-        inquiryType: "buying",
-        inquiryDetails: "",
+        serviceType: "roof-replacement",
+        serviceDetails: "",
         email: "",
         phone: "",
+        address: "",
+        urgency: "standard",
       });
     }, 3000);
   };
 
-  const inquiryOptions = [
+  // CHANGED: Roofing & Construction service options
+  const serviceOptions = [
     {
-      value: "buying",
-      label: "Buying a property",
+      value: "roof-replacement",
+      label: "Roof Replacement",
       icon: FiHome,
-      desc: "Find your dream home",
+      desc: "Full roof replacement with premium materials",
     },
     {
-      value: "selling",
-      label: "Selling a property",
-      icon: FiDollarSign,
-      desc: "Get maximum value",
+      value: "roof-repair",
+      label: "Roof Repair",
+      icon: FiTool,
+      desc: "Leak fixes, storm damage, missing shingles",
     },
     {
-      value: "investing",
-      label: "Real estate investment",
+      value: "emergency",
+      label: "Emergency Service",
+      icon: FiCloudRain,
+      desc: "24/7 emergency tarping & repairs",
+    },
+    {
+      value: "siding-windows",
+      label: "Siding & Windows",
+      icon: FiSun,
+      desc: "Energy-efficient exterior upgrades",
+    },
+    {
+      value: "deck-patio",
+      label: "Deck or Patio",
+      icon: RiBuildingLine,
+      desc: "Custom outdoor living spaces",
+    },
+    {
+      value: "interior-remodel",
+      label: "Interior Remodel",
       icon: FiBriefcase,
-      desc: "Grow your portfolio",
-    },
-    {
-      value: "consultation",
-      label: "Free consultation",
-      icon: FiUsers,
-      desc: "Expert advice",
+      desc: "Kitchen, bath, basement renovation",
     },
   ];
 
+  const urgencyOptions = [
+    { value: "emergency", label: "🚨 Emergency (within 24-48 hrs)" },
+    { value: "soon", label: "⚡ Soon (1-2 weeks)" },
+    { value: "planned", label: "📅 Planning (1-3 months)" },
+  ];
+
   const stepIcons = [FiUserCheck, FiMessageSquare, FiSmartphone];
-  const stepLabels = ["Your Info", "Inquiry Type", "Contact"];
+  const stepLabels = ["Your Info", "Project Details", "Contact"];
 
   const SelectedIcon =
-    inquiryOptions.find((opt) => opt.value === formData.inquiryType)?.icon ||
+    serviceOptions.find((opt) => opt.value === formData.serviceType)?.icon ||
     FiHome;
 
   return (
-    <div className="w-full max-w-md mx-auto lg:mx-0 ">
+    <div className="w-full max-w-lg mx-auto lg:mx-0">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden border border-gray-100"
       >
-        {/* Form Header */}
-        <div className="relative flex-shrink-0 bg-gradient-to-r from-gray-50 to-white border-b border-gray-100">
+        {/* Form Header - UPDATED FOR ROOFING */}
+        <div className="relative flex-shrink-0 bg-gradient-to-r from-primary/5 to-primary/10 border-b border-gray-100">
           <div className="px-5 sm:px-6 md:px-8 py-5 sm:py-6">
             <div className="flex items-start justify-between gap-3">
               <div className="flex items-center gap-3">
@@ -142,14 +164,13 @@ const InquiryForm = () => {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                    Fast & Easy Quote
+                    Free Roofing Estimate
                   </h3>
                   <p className="text-gray-500 text-sm mt-0.5">
-                    Get your estimate in 3 simple steps
+                    Get your quote in 3 easy steps
                   </p>
                 </div>
               </div>
-              {/* 3 Steps Badge */}
               <div className="hidden sm:flex items-center gap-1 bg-primary/10 rounded-full px-3 py-1.5">
                 <div className="flex -space-x-1">
                   {[1, 2, 3].map((i) => (
@@ -173,7 +194,6 @@ const InquiryForm = () => {
           </div>
         </div>
 
-        {/* FIXED HEIGHT CONTAINER - EQUAL HEIGHT FOR ALL STEPS */}
         <div
           ref={containerRef}
           style={{ minHeight: `${containerHeight}px` }}
@@ -184,7 +204,7 @@ const InquiryForm = () => {
               onSubmit={handleSubmit}
               className="px-5 sm:px-6 md:px-8 py-6 sm:py-8"
             >
-              {/* Enhanced Step Indicators */}
+              {/* Step Indicators */}
               <div className="mb-8">
                 <div className="flex items-center justify-between">
                   {[1, 2, 3].map((s) => {
@@ -226,7 +246,6 @@ const InquiryForm = () => {
                     );
                   })}
                 </div>
-                {/* Progress bar */}
                 <div className="relative mt-4 h-1 bg-gray-100 rounded-full overflow-hidden">
                   <motion.div
                     className="absolute left-0 top-0 h-full bg-primary rounded-full"
@@ -237,7 +256,6 @@ const InquiryForm = () => {
                 </div>
               </div>
 
-              {/* Step Content - ALL STEPS HAVE SAME LAYOUT STRUCTURE */}
               <div className="relative">
                 <AnimatePresence mode="wait">
                   {/* Step 1: Name */}
@@ -251,7 +269,7 @@ const InquiryForm = () => {
                       className="space-y-5"
                     >
                       <div className="bg-primary/5 rounded-xl p-3 flex items-center gap-2 mb-2">
-                        <FiClock className="w-4 h-4 text-primary" />
+                        <FiUser className="w-4 h-4 text-primary" />
                         <span className="text-xs text-gray-600">
                           Step 1 of 3 - Tell us who you are
                         </span>
@@ -290,10 +308,34 @@ const InquiryForm = () => {
                           />
                         </div>
                       </div>
+                      <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-2">
+                          Property address
+                        </label>
+                        <div className="relative group">
+                          <FiHome className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors" />
+                          <input
+                            type="text"
+                            name="address"
+                            value={formData.address}
+                            onChange={handleChange}
+                            className="w-full border-2 border-gray-100 rounded-xl py-3.5 pl-11 pr-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:bg-white transition-all"
+                            placeholder="123 Main St, Canton, MI"
+                            required
+                          />
+                        </div>
+                        <p className="text-xs text-gray-400 mt-1 ml-1">
+                          So we can accurately estimate your project
+                        </p>
+                      </div>
                       <button
                         type="button"
                         onClick={nextStep}
-                        disabled={!formData.firstName || !formData.lastName}
+                        disabled={
+                          !formData.firstName ||
+                          !formData.lastName ||
+                          !formData.address
+                        }
                         className="w-full bg-primary text-white py-3.5 rounded-xl font-semibold mt-4 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary/90 transition-all flex items-center justify-center gap-2 group shadow-md hover:shadow-lg"
                       >
                         Continue
@@ -302,7 +344,7 @@ const InquiryForm = () => {
                     </motion.div>
                   )}
 
-                  {/* Step 2: Inquiry - IMPROVED DROPDOWN VERSION */}
+                  {/* Step 2: Service Type - UPDATED FOR ROOFING */}
                   {step === 2 && (
                     <motion.div
                       key="step2"
@@ -313,25 +355,24 @@ const InquiryForm = () => {
                       className="space-y-5"
                     >
                       <div className="bg-primary/5 rounded-xl p-3 flex items-center gap-2 mb-2">
-                        <FiZap className="w-4 h-4 text-primary" />
+                        <FiTool className="w-4 h-4 text-primary" />
                         <span className="text-xs text-gray-600">
-                          Step 2 of 3 - What are you looking for?
+                          Step 2 of 3 - What service do you need?
                         </span>
                       </div>
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          I'm interested in
+                          Service needed
                         </label>
-                        {/* DROPDOWN SELECT - Consistent height */}
                         <div className="relative">
                           <select
-                            name="inquiryType"
-                            value={formData.inquiryType}
+                            name="serviceType"
+                            value={formData.serviceType}
                             onChange={handleChange}
                             className="w-full border-2 border-gray-100 rounded-xl py-3.5 pl-12 pr-10 text-gray-900 focus:outline-none focus:border-primary focus:bg-white transition-all appearance-none cursor-pointer bg-white"
                             style={{ height: "52px" }}
                           >
-                            {inquiryOptions.map((opt) => (
+                            {serviceOptions.map((opt) => (
                               <option key={opt.value} value={opt.value}>
                                 {opt.label}
                               </option>
@@ -354,14 +395,47 @@ const InquiryForm = () => {
                             </svg>
                           </div>
                         </div>
-                        {/* Selected option description */}
                         <p className="text-xs text-gray-400 mt-2 ml-1">
                           {
-                            inquiryOptions.find(
-                              (opt) => opt.value === formData.inquiryType,
+                            serviceOptions.find(
+                              (opt) => opt.value === formData.serviceType,
                             )?.desc
                           }
                         </p>
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-2">
+                          Urgency
+                        </label>
+                        <div className="relative">
+                          <select
+                            name="urgency"
+                            value={formData.urgency}
+                            onChange={handleChange}
+                            className="w-full border-2 border-gray-100 rounded-xl py-3.5 pl-4 pr-10 text-gray-900 focus:outline-none focus:border-primary focus:bg-white transition-all appearance-none cursor-pointer bg-white"
+                          >
+                            {urgencyOptions.map((opt) => (
+                              <option key={opt.value} value={opt.value}>
+                                {opt.label}
+                              </option>
+                            ))}
+                          </select>
+                          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg
+                              className="w-4 h-4 text-gray-400"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M19 9l-7 7-7-7"
+                              />
+                            </svg>
+                          </div>
+                        </div>
                       </div>
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -371,12 +445,12 @@ const InquiryForm = () => {
                           </span>
                         </label>
                         <textarea
-                          name="inquiryDetails"
-                          value={formData.inquiryDetails}
+                          name="serviceDetails"
+                          value={formData.serviceDetails}
                           onChange={handleChange}
                           rows={3}
                           className="w-full border-2 border-gray-100 rounded-xl py-3 px-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:bg-white transition-all resize-none"
-                          placeholder="Tell us about your budget, preferred location, timeline..."
+                          placeholder="Tell us about your project, any known issues, insurance claim status, etc."
                           style={{ minHeight: "80px" }}
                         />
                       </div>
@@ -445,16 +519,16 @@ const InquiryForm = () => {
                             value={formData.phone}
                             onChange={handleChange}
                             className="w-full border-2 border-gray-100 rounded-xl py-3.5 pl-11 pr-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:bg-white transition-all"
-                            placeholder="+1 (555) 000-0000"
+                            placeholder="+1 214-284-3212"
                             required
                           />
                         </div>
                       </div>
-                      <div className="bg-gray-50 rounded-xl p-3 flex items-start gap-2">
-                        <FiShield className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-gray-500">
-                          Your information is secure. We'll never share your
-                          details with third parties.
+                      <div className="bg-primary/5 rounded-xl p-3 flex items-start gap-2">
+                        <FiAward className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                        <p className="text-xs text-gray-600">
+                          We'll send your free estimate within 24 hours. No
+                          obligation, no hidden fees.
                         </p>
                       </div>
                       <div className="flex gap-3 pt-2">
@@ -497,7 +571,7 @@ const InquiryForm = () => {
                             </>
                           ) : (
                             <>
-                              Get My Quote
+                              Get Free Estimate
                               <FiSend className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </>
                           )}
@@ -519,11 +593,11 @@ const InquiryForm = () => {
                 <FiCheckCircle className="w-10 h-10 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Quote Request Sent!
+                Estimate Request Sent!
               </h3>
               <p className="text-gray-500 text-sm max-w-xs mx-auto">
-                One of our experts will reach out within 24 hours with your
-                personalized quote.
+                Thanks for contacting Orr Roofing & Construction. We'll reach
+                out within 24 hours with your free estimate.
               </p>
             </motion.div>
           )}
@@ -533,16 +607,59 @@ const InquiryForm = () => {
   );
 };
 
+// HERO COMPONENT - UPDATED FOR ORR ROOFING & CONSTRUCTION
 const Hero = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const { badge, headlines, description, buttons, stats, promoBadge } =
-    completeData.hero;
+  // UPDATED: Roofing-specific data
+  const roofingData = {
+    badge: "FREE ESTIMATES • LICENSED & INSURED",
+    headlines: ["Quality Roofing", "Expert Construction"],
+    description:
+      "Need a new roof or emergency repairs? Orr Roofing & Construction provides fast, reliable service with free estimates. We handle insurance claims and offer 24/7 emergency service for storm damage.",
+    buttons: [
+      {
+        text: "Free Estimate",
+        href: "#quote",
+        primary: true,
+        icon: "FiDollarSign",
+      },
+      {
+        text: "How We Work",
+        href: "#how-it-works",
+        primary: false,
+        icon: "FiArrowRight",
+      },
+    ],
+    stats: [
+      {
+        value: "24hr",
+        label: "Emergency Response",
+        icon: "FiClock",
+      },
+      {
+        value: "Free",
+        label: "Estimates",
+        icon: "FiDollarSign",
+      },
+      {
+        value: "100%",
+        label: "Licensed & Insured",
+        icon: "FiShield",
+      },
+      {
+        value: "1000+",
+        label: "Projects Done",
+        icon: "FiHome",
+      },
+    ],
+  };
 
-  // REMOVED PARALLAX ANIMATION - image stays static now
+  const { badge, headlines, description, buttons, stats, promoBadge } =
+    roofingData;
+
   useEffect(() => {
-    // Only keep subtle mouse movement for floating elements, NOT for the image
     const handleMouseMove = (e: MouseEvent) => {
       const { clientX, clientY } = e;
       const { innerWidth, innerHeight } = window;
@@ -562,6 +679,11 @@ const Hero = () => {
     FiStar: FiStar,
     FiThumbsUp: FiThumbsUp,
     RiShieldCheckLine: RiShieldCheckLine,
+    FiDollarSign: FiDollarSign,
+    FiClock: FiClock,
+    FiShield: FiShield,
+    FiHome: FiHome,
+    FiTool: FiTool,
   };
 
   return (
@@ -569,21 +691,20 @@ const Hero = () => {
       ref={sectionRef}
       className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 isolate"
     >
-      {/* STATIC BACKGROUND - NO PARALLAX ANIMATION */}
+      {/* STATIC BACKGROUND */}
       <div className="absolute inset-0 -z-10">
-        {/* Static image - no movement */}
         <img
           src={heroBg}
-          alt=""
+          alt="Orr Roofing & Construction - Professional roofing services"
           className="w-full h-full object-cover absolute inset-0"
           style={{ transform: "none" }}
         />
         {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-slate-900/60" />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-black/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-slate-900/60" />
+        <div className="absolute inset-0 bg-black/10" />
 
-        {/* Subtle floating elements (these can move, but not the main image) */}
+        {/* Subtle floating elements */}
         <motion.div
           className="absolute top-[20%] right-[15%] w-[40rem] h-[40rem] bg-primary/5 rounded-full blur-3xl"
           animate={{
@@ -618,7 +739,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* Grid pattern overlay - subtle */}
+      {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -649,13 +770,13 @@ const Hero = () => {
             {/* Left Column - Content */}
             <div className="text-center lg:text-left">
               <motion.div
-                className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6 mx-auto lg:mx-0"
+                className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6 mx-auto lg:mx-0"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span className="text-white text-xs uppercase tracking-wider font-medium">
+                <span className="text-black text-xs uppercase tracking-wider font-medium">
                   {badge}
                 </span>
               </motion.div>
@@ -699,7 +820,7 @@ const Hero = () => {
                       {promoBadge.text}
                     </span>
                     <a
-                      href="#contact"
+                      href="#testimonials"
                       className="text-primary text-sm font-bold hover:underline"
                     >
                       {promoBadge.cta} →
@@ -726,79 +847,60 @@ const Hero = () => {
                         key={idx}
                         href={button.href}
                         className="
-            group relative overflow-hidden
-            min-w-[150px] sm:min-w-[170px]
-            flex-1 sm:flex-initial
-            px-5 sm:px-7 py-3.5
-            rounded-2xl
-            inline-flex items-center justify-center gap-2
-            text-sm sm:text-base font-semibold tracking-wide
-            bg-primary text-primary-foreground
-            border border-primary/30
-            shadow-[0_10px_30px_rgba(0,0,0,0.15)]
-            transition-all duration-300
-            hover:bg-white hover:text-primary hover:border-white/70
-            hover:shadow-[0_16px_40px_rgba(255,255,255,0.18)]
-            active:scale-[0.98]
-            backdrop-blur-xl
-          "
+                          group relative overflow-hidden
+                          min-w-[150px] sm:min-w-[170px]
+                          flex-1 sm:flex-initial
+                          px-5 sm:px-7 py-3.5
+                          rounded-2xl
+                          inline-flex items-center justify-center gap-2
+                          text-sm sm:text-base font-semibold tracking-wide
+                          bg-primary text-white
+                          border border-primary/30
+                          shadow-[0_10px_30px_rgba(0,0,0,0.15)]
+                          transition-all duration-300
+                          hover:bg-white hover:text-primary hover:border-white/70
+                          hover:shadow-[0_16px_40px_rgba(255,255,255,0.18)]
+                          active:scale-[0.98]
+                        "
                         whileHover={{ scale: 1.03, y: -2 }}
                         whileTap={{ scale: 0.98 }}
                       >
                         <span className="relative z-10">{button.text}</span>
-
                         {Icon && (
                           <Icon className="relative z-10 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                         )}
-
-                        <span
-                          className="
-              absolute inset-0
-              bg-gradient-to-r from-white/20 via-white/10 to-transparent
-              opacity-0 group-hover:opacity-100
-              transition-opacity duration-300
-            "
-                        />
+                        <span className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       </motion.a>
                     ) : (
                       <motion.a
                         key={idx}
                         href={button.href}
                         className="
-            group relative overflow-hidden
-            min-w-[150px] sm:min-w-[170px]
-            flex-1 sm:flex-initial
-            px-5 sm:px-7 py-3.5
-            rounded-2xl
-            inline-flex items-center justify-center gap-2
-            text-sm sm:text-base font-semibold tracking-wide
-            backdrop-blur-xl
-            bg-white/10
-            text-white
-            border border-white/20
-            shadow-[0_10px_30px_rgba(0,0,0,0.12)]
-            transition-all duration-300
-            hover:bg-white hover:text-slate-900 hover:border-white
-            hover:shadow-[0_16px_40px_rgba(255,255,255,0.16)]
-            active:scale-[0.98]
-          "
+                          group relative overflow-hidden
+                          min-w-[150px] sm:min-w-[170px]
+                          flex-1 sm:flex-initial
+                          px-5 sm:px-7 py-3.5
+                          rounded-2xl
+                          inline-flex items-center justify-center gap-2
+                          text-sm sm:text-base font-semibold tracking-wide
+                          backdrop-blur-xl
+                          bg-white/10
+                          text-white
+                          border border-white/20
+                          shadow-[0_10px_30px_rgba(0,0,0,0.12)]
+                          transition-all duration-300
+                          hover:bg-white hover:text-slate-900 hover:border-white
+                          hover:shadow-[0_16px_40px_rgba(255,255,255,0.16)]
+                          active:scale-[0.98]
+                        "
                         whileHover={{ scale: 1.03, y: -2 }}
                         whileTap={{ scale: 0.98 }}
                       >
                         <span className="relative z-10">{button.text}</span>
-
                         {Icon && (
                           <Icon className="relative z-10 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                         )}
-
-                        <span
-                          className="
-              absolute inset-0
-              bg-gradient-to-r from-white/15 via-white/5 to-transparent
-              opacity-0 group-hover:opacity-100
-              transition-opacity duration-300
-            "
-                        />
+                        <span className="absolute inset-0 bg-gradient-to-r from-white/15 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       </motion.a>
                     );
                   })}
@@ -806,7 +908,7 @@ const Hero = () => {
               </motion.div>
 
               <motion.div
-                className="flex flex-wrap justify-center lg:justify-start gap-8 pt-6 border-t border-white/20"
+                className="flex flex-wrap justify-center lg:justify-start gap-6 pt-6 border-t border-white/20"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.1 }}
@@ -833,9 +935,9 @@ const Hero = () => {
               </motion.div>
             </div>
 
-            {/* Right Column - Form with better width */}
-            <div className="mt-8 py-4 lg:py-8 lg:mt-0 flex justify-center lg:justify-end">
-              <InquiryForm />
+            {/* Right Column - Updated Form Component */}
+            <div className="mt-8  py-4 lg:py-8 lg:mt-0 flex justify-center lg:justify-center">
+              <RoofingInquiryForm />
             </div>
           </div>
         </div>

@@ -635,12 +635,12 @@ const AwardCTABanner = () => {
                 href={button.href}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                className="relative px-8 py-4 bg-white text-[#107933] border-2 border-[#107933] font-bold rounded-full shadow-sm hover:bg-[#107933] hover:text-white hover:shadow-md transition-all duration-300 overflow-hidden flex items-center justify-center gap-2"
+                className="relative px-8 py-4 bg-white text-primary border-2 border-primary font-bold rounded-full shadow-sm hover:bg-primary hover:text-white hover:shadow-md transition-all duration-300 overflow-hidden flex items-center justify-center gap-2"
               >
                 <span className="relative z-10 flex items-center gap-2 text-sm md:text-base">
                   {button.text}
                   <motion.svg
-                    className="w-4 h-4 text-[#107933] transition-transform duration-300 group-hover:translate-x-1"
+                    className="w-4 h-4 text-primary transition-transform duration-300 group-hover:translate-x-1"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

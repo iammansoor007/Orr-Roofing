@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import serviceDetail from "@/assets/2-image-of-right-now-home-buyers.jpg.jpeg";
+import serviceDetail from "@/assets/orrownerservices.png";
 import {
   Wrench,
   Home,
@@ -491,7 +491,7 @@ const Services = () => {
                     >
                       <span className="text-xs font-semibold text-primary flex items-center gap-1.5">
                         <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
-                        Right Now Home Buyers
+                        Orr Roofing & Construction
                       </span>
                     </motion.div>
                   </div>
@@ -535,7 +535,7 @@ const Services = () => {
             whileTap={{ scale: 0.98 }}
             className="
     inline-block px-8 py-4 
-    bg-gradient-to-r from-[#107933] to-[#36B36A] 
+    bg-primary border border-primary
     text-white font-bold rounded-full 
     shadow-lg hover:shadow-xl 
     transition-all duration-300

@@ -1,6 +1,6 @@
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef, useEffect, useState, useCallback, useMemo, memo } from "react";
-import EagleAboutImg from "@/assets/realsection1.jpeg";
+import EagleAboutImg from "@/assets/orradvantage.png";
 import completeData from "../src/data/completeData.json";
 
 const Counter = memo(
@@ -227,8 +227,6 @@ export default function AboutSection() {
       className="relative bg-background overflow-hidden py-6 md:py-8 lg:py-12"
       aria-label="About Eagle Revolution"
     >
-      
-
       <div className="absolute inset-0">
         <ParticlesBackground />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_hsl(var(--primary)/0.02)_0%,_transparent_50%)]" />
@@ -394,24 +392,22 @@ export default function AboutSection() {
             px-5 sm:px-8 py-3.5 sm:py-4
             rounded-2xl
             inline-flex items-center justify-center gap-2
-            bg-[#107933]
+            bg-primary
             text-white
-            border border-[#107933]
+            border border-primary
             font-semibold sm:font-bold
             text-sm sm:text-base
-            shadow-[0_12px_30px_rgba(16,121,51,0.22)]
+            shadow-primary
             transition-all duration-300
-            hover:bg-[#0d662b]
-            hover:border-[#0d662b]
             hover:text-white
-            hover:shadow-[0_18px_40px_rgba(16,121,51,0.35)]
+            hover:shadow-primary
           "
                     >
                       <span
                         className="
               absolute inset-0 opacity-0 group-hover:opacity-100
               bg-gradient-to-r from-white/20 via-transparent to-white/10
-              transition-opacity duration-300
+              transition-opacity duration-100
             "
                       />
 
@@ -451,12 +447,12 @@ export default function AboutSection() {
             border-2 border-[#107933]/20
             font-semibold sm:font-bold
             text-sm sm:text-base
-            shadow-[0_10px_25px_rgba(0,0,0,0.08)]
+            shadow-primary/10
             transition-all duration-300
-            hover:bg-[#107933]
+            hover:bg-primary
             hover:text-white
-            hover:border-[#107933]
-            hover:shadow-[0_18px_40px_rgba(16,121,51,0.28)]
+            hover:border-primary
+            hover:shadow-primary
           "
                     >
                       <span
