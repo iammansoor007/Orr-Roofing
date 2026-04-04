@@ -154,15 +154,15 @@ const StatCard = memo(
       <motion.div
         whileHover={{ y: -4 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className="relative bg-card p-4 rounded-2xl border border-border shadow-lg hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
+        className="relative bg-card p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-border shadow-lg hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 w-full"
       >
         <div className="relative">
-          <span className="text-3xl md:text-4xl font-black text-primary">
+          <span className="text-2xl sm:text-3xl md:text-4xl font-black text-primary">
             <Counter value={value} suffix={suffix} />
           </span>
-          <div className="absolute -bottom-2 left-0 w-12 h-0.5 bg-primary rounded-full" />
+          <div className="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 bg-primary rounded-full" />
         </div>
-        <p className="text-xs md:text-sm font-semibold text-muted-foreground mt-3">
+        <p className="text-[10px] sm:text-xs md:text-sm font-semibold text-muted-foreground mt-2 sm:mt-3 leading-tight">
           {label}
         </p>
       </motion.div>
@@ -377,7 +377,7 @@ export default function AboutSection() {
             )}
 
             <motion.div variants={variants} custom={6} className="pt-2 w-full">
-              <div className="flex flex-row flex-wrap sm:flex-nowrap items-center gap-3 sm:gap-4 w-full">
+              <div className="flex flex-row sm:flex-col md:flex-row flex-wrap items-center  gap-3 sm:gap-4 md:gap-4 w-full">
                 {buttons.map((button: any, idx: number) =>
                   button.primary ? (
                     <motion.a
@@ -387,9 +387,9 @@ export default function AboutSection() {
                       whileTap={{ scale: 0.98 }}
                       className="
             group relative overflow-hidden
-            flex-1 sm:flex-initial
-            min-w-[150px] sm:min-w-[180px]
-            px-5 sm:px-8 py-3.5 sm:py-4
+            w-full sm:w-auto md:w-auto
+            min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px]
+            px-5 sm:px-8 md:px-6 lg:px-8 py-3 sm:py-4 md:py-3.5 lg:py-4
             rounded-2xl
             inline-flex items-center justify-center gap-2
             bg-primary
@@ -437,14 +437,14 @@ export default function AboutSection() {
                       whileTap={{ scale: 0.98 }}
                       className="
             group relative overflow-hidden
-            flex-1 sm:flex-initial
-            min-w-[150px] sm:min-w-[180px]
-            px-5 sm:px-8 py-3.5 sm:py-4
+            w-full sm:w-auto md:w-auto
+            min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px]
+            px-5 sm:px-8 md:px-6 lg:px-8 py-3 sm:py-4 md:py-3.5 lg:py-4
             rounded-2xl
             inline-flex items-center justify-center gap-2
             bg-white
             text-[#333333]
-            border-2 border-[#107933]/20
+            border-2 border-primary
             font-semibold sm:font-bold
             text-sm sm:text-base
             shadow-primary/10
