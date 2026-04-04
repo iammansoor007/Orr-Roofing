@@ -445,7 +445,7 @@ const Portfolio = () => {
           transition={{ duration: 0.6 }}
           className="flex justify-center mt-8 sm:mt-10 md:mt-12"
         >
-          <button className="px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 bg-gradient-to-r from-primary to-primary/80 text-white text-xs sm:text-sm font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-1 sm:gap-2 hover:scale-105 hover:from-primary/90 hover:to-primary/70">
+          <button className="p-4 sm:p-3 md:p-4  bg-gradient-to-r from-primary to-primary/80 text-white text-xs sm:text-sm font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-1 sm:gap-2 hover:scale-105 hover:from-primary/90 hover:to-primary/70">
             {button.text}
             <svg
               width="14"
