@@ -11,95 +11,95 @@
 @layer base {
   :root {
     /* Backgrounds - Pure White */
-    --background: 0 0% 100%; /* #FFFFFF - Pure White */
-    --foreground: 0 0% 0%; /* #000000 - Pure Black Text */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
-    /* Card - Pure White with subtle border */
-    --card: 0 0% 100%; /* #FFFFFF */
-    --card-foreground: 0 0% 0%; /* #000000 */
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
 
     /* Popover */
-    --popover: 0 0% 100%; /* #FFFFFF */
-    --popover-foreground: 0 0% 0%; /* #000000 */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
 
-    /* Primary - TRUE GOLD (Not Brown!) */
-    --primary: 45 85% 45%; /* #F5C518 - Pure Gold */
-    --primary-foreground: 0 0% 0%; /* Black text on gold */
+    /* Primary - Black */
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Black/Dark Gray */
-    --secondary: 0 0% 0%; /* #000000 */
-    --secondary-foreground: 0 0% 100%; /* White text on black */
+    /* Secondary - Black */
+    --secondary: 0 0% 0%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Muted - Light Gray for backgrounds */
-    --muted: 0 0% 96%; /* #F5F5F5 */
-    --muted-foreground: 0 0% 30%; /* #4D4D4D - Dark gray text */
+    /* Muted - White */
+    --muted: 0 0% 100%;
+    --muted-foreground: 0 0% 0%;
 
-    /* Accent - BRIGHT GOLD */
-    --accent: 45 100% 51%; /* #FFD700 - Bright Gold */
-    --accent-foreground: 0 0% 0%; /* Black text on gold */
+    /* Accent - Black */
+    --accent: 0 0% 0%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Destructive - Keep for error states */
-    --destructive: 0 84% 60%; /* #EF4444 - Red */
-    --destructive-foreground: 0 0% 100%; /* White */
+    /* Destructive - Black */
+    --destructive: 0 0% 0%;
+    --destructive-foreground: 0 0% 100%;
 
-    /* Borders - Light Gray */
-    --border: 0 0% 85%; /* #D9D9D9 */
-    --input: 0 0% 90%; /* #E6E6E6 */
-    --ring: 48 89% 50%; /* #F5C518 - Pure Gold ring for focus */
+    /* Borders - Black */
+    --border: 0 0% 0%;
+    --input: 0 0% 100%;
+    --ring: 0 0% 0%;
 
     --radius: 0.5rem;
 
-    /* Sidebar - Dark Theme for contrast */
-    --sidebar-background: 0 0% 0%; /* #000000 */
-    --sidebar-foreground: 0 0% 100%; /* #FFFFFF */
-    --sidebar-primary: 48 89% 50%; /* #F5C518 - Pure Gold */
-    --sidebar-primary-foreground: 0 0% 0%; /* Black */
-    --sidebar-accent: 45 100% 51%; /* #FFD700 - Bright Gold */
-    --sidebar-accent-foreground: 0 0% 0%; /* Black */
-    --sidebar-border: 48 89% 50%; /* #F5C518 - Pure Gold */
-    --sidebar-ring: 48 89% 50%; /* #F5C518 - Pure Gold */
+    /* Sidebar */
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 100%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 100%;
+    --sidebar-ring: 0 0% 100%;
 
-    /* Custom Colors - Complete Gold Palette */
-    --gold-pure: 48 89% 50%; /* #F5C518 - Main Gold */
-    --gold-bright: 45 100% 51%; /* #FFD700 - Bright/Shiny Gold */
-    --gold-light: 48 100% 67%; /* #FFE55C - Light Gold for gradients */
-    --gold-dark: 48 89% 40%; /* #C9A00E - Dark Gold for hover/pressed states */
-    --gold-metallic: 51 100% 50%; /* #FFDF00 - Metallic Gold */
+    /* Custom Colors - Black & White only */
+    --gold-pure: 0 0% 0%;
+    --gold-bright: 0 0% 100%;
+    --gold-light: 0 0% 100%;
+    --gold-dark: 0 0% 0%;
+    --gold-metallic: 0 0% 100%;
 
     /* Black & White */
-    --pure-black: 0 0% 0%; /* #000000 */
-    --pure-white: 0 0% 100%; /* #FFFFFF */
-    --off-black: 0 0% 10%; /* #1A1A1A */
-    --off-white: 0 0% 98%; /* #FAFAFA */
+    --pure-black: 0 0% 0%;
+    --pure-white: 0 0% 100%;
+    --off-black: 0 0% 0%;
+    --off-white: 0 0% 100%;
 
-    /* Grays - For hierarchy and depth */
-    --gray-dark: 0 0% 20%; /* #333333 */
-    --gray-medium-dark: 0 0% 30%; /* #4D4D4D */
-    --gray-medium: 0 0% 40%; /* #666666 */
-    --gray-medium-light: 0 0% 60%; /* #999999 */
-    --gray-light: 0 0% 80%; /* #CCCCCC */
-    --gray-lighter: 0 0% 90%; /* #E6E6E6 */
+    /* Grays - All black and white */
+    --gray-dark: 0 0% 0%;
+    --gray-medium-dark: 0 0% 0%;
+    --gray-medium: 0 0% 0%;
+    --gray-medium-light: 0 0% 100%;
+    --gray-light: 0 0% 100%;
+    --gray-lighter: 0 0% 100%;
 
     /* Surface Colors */
-    --surface-white: 0 0% 100%; /* #FFFFFF */
-    --surface-gray: 0 0% 96%; /* #F5F5F5 */
-    --surface-gray-dark: 0 0% 93%; /* #EDEDED */
+    --surface-white: 0 0% 100%;
+    --surface-gray: 0 0% 100%;
+    --surface-gray-dark: 0 0% 0%;
 
-    /* Accent Colors - Orange for fire effect */
-    --orange-accent: 26 100% 60%; /* #FF8C32 */
-    --orange-dark: 26 100% 50%; /* #FF6B00 */
-    --orange-light: 26 100% 70%; /* #FFA860 */
+    /* Accent Colors */
+    --orange-accent: 0 0% 0%;
+    --orange-dark: 0 0% 0%;
+    --orange-light: 0 0% 100%;
 
-    /* Success, Warning, Info - Optional */
-    --success: 142 76% 36%; /* #15803D - Green */
-    --warning: 38 92% 50%; /* #F59E0B - Amber */
-    --info: 199 89% 48%; /* #0EA5E9 - Blue */
+    /* Success, Warning, Info */
+    --success: 0 0% 0%;
+    --warning: 0 0% 0%;
+    --info: 0 0% 0%;
 
-    /* Shadows - For depth */
+    /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-    --shadow-gold: 0 10px 25px -5px rgba(245, 197, 24, 0.2);
+    --shadow-gold: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
 
     /* Fonts */
     --font-heading: "Space Grotesk", sans-serif;
@@ -107,13 +107,13 @@
     --font-mono: "SF Mono", "Fira Code", monospace;
 
     /* Spacing */
-    --spacing-xs: 0.5rem; /* 8px */
-    --spacing-sm: 1rem; /* 16px */
-    --spacing-md: 1.5rem; /* 24px */
-    --spacing-lg: 2rem; /* 32px */
-    --spacing-xl: 3rem; /* 48px */
-    --spacing-2xl: 4rem; /* 64px */
-    --spacing-3xl: 6rem; /* 96px */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 6rem;
 
     /* Container Widths */
     --container-sm: 640px;
@@ -141,11 +141,11 @@
 
     /* Border Radius */
     --radius-none: 0;
-    --radius-sm: 0.25rem; /* 4px */
-    --radius-base: 0.5rem; /* 8px */
-    --radius-md: 0.75rem; /* 12px */
-    --radius-lg: 1rem; /* 16px */
-    --radius-xl: 1.5rem; /* 24px */
+    --radius-sm: 0.25rem;
+    --radius-base: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
     --radius-full: 9999px;
 
     /* Opacity */
@@ -154,43 +154,43 @@
     --opacity-active: 0.9;
   }
 
-  /* Optional: Dark Mode if needed */
+  /* Dark Mode - Inverted */
   .dark {
-    --background: 0 0% 4%; /* #0A0A0A */
-    --foreground: 0 0% 96%; /* #F5F5F5 */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 8%; /* #141414 */
-    --card-foreground: 0 0% 96%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 96%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 48 89% 50%; /* #F5C518 - Same Pure Gold */
+    --primary: 0 0% 100%;
     --primary-foreground: 0 0% 0%;
 
-    --secondary: 0 0% 12%; /* #1E1E1E */
-    --secondary-foreground: 0 0% 96%;
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 0 0% 0%;
+    --muted-foreground: 0 0% 100%;
 
-    --accent: 45 100% 51%; /* #FFD700 - Bright Gold */
+    --accent: 0 0% 100%;
     --accent-foreground: 0 0% 0%;
 
-    --border: 0 0% 20%; /* #333333 */
-    --input: 0 0% 15%; /* #262626 */
-    --ring: 48 89% 50%;
+    --border: 0 0% 100%;
+    --input: 0 0% 0%;
+    --ring: 0 0% 100%;
 
-    --sidebar-background: 0 0% 4%;
-    --sidebar-foreground: 0 0% 96%;
-    --sidebar-primary: 48 89% 50%;
-    --sidebar-primary-foreground: 0 0% 0%;
-    --sidebar-accent: 45 100% 51%;
-    --sidebar-accent-foreground: 0 0% 0%;
-    --sidebar-border: 48 89% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 0 0% 0%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 0%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 0%;
 
-    --surface-gray: 0 0% 10%; /* #1A1A1A */
-    --gray-light: 0 0% 25%; /* #404040 */
+    --surface-gray: 0 0% 0%;
+    --gray-light: 0 0% 100%;
   }
 }
 
@@ -231,7 +231,7 @@
   }
 
   a:hover {
-    @apply text-dark-gold;
+    color: #000000;
   }
 }
 
@@ -244,7 +244,7 @@
     @apply px-6 md:px-12 lg:px-24 py-20 md:py-32;
   }
 
-  /* Typography with strong contrast */
+  /* Typography */
   .heading-xl {
     @apply text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold;
     font-family: var(--font-heading);
@@ -273,42 +273,43 @@
     @apply text-lg md:text-xl;
     font-family: var(--font-body);
     line-height: 1.6;
-    color: #333333;
+    color: #000000;
   }
 
   .body-sm {
     @apply text-sm md:text-base;
     font-family: var(--font-body);
     line-height: 1.5;
-    color: #666666;
+    color: #000000;
   }
 
   /* Accent Elements */
   .accent-line {
-    @apply w-16 h-0.5 bg-dark-gold;
+    @apply w-16 h-0.5;
+    background-color: #000000;
   }
 
   .grid-editorial {
     @apply grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8;
   }
 
-  /* Gradients with Dark Gold */
+  /* Gradients - Black & White */
   .text-gradient {
-    background: linear-gradient(135deg, #9b7b1c 0%, #d4af37 100%);
+    background: linear-gradient(135deg, #000000 0%, #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
 
   .bg-gradient-cta {
-    background: linear-gradient(135deg, #9b7b1c 0%, #b8960c 100%);
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
     color: #ffffff;
     transition: all 0.3s ease;
   }
 
-  /* Button Styles - Strong Contrast */
+  /* Button Styles */
   .btn-primary {
-    background-color: #9b7b1c; /* Dark Gold */
+    background-color: #000000;
     color: #ffffff;
     font-weight: 600;
     padding: 0.75rem 1.5rem;
@@ -318,28 +319,30 @@
   }
 
   .btn-primary:hover {
-    background-color: #7d5f16; /* Darker Gold */
+    background-color: #333333;
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
 
   .btn-secondary {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     font-weight: 600;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
+    border: 1px solid #000000;
   }
 
   .btn-secondary:hover {
-    background-color: #1a1a1a;
+    background-color: #000000;
+    color: #ffffff;
     transform: translateY(-2px);
   }
 
   .btn-outline {
-    border: 2px solid #9b7b1c;
+    border: 2px solid #000000;
     color: #000000;
     background: transparent;
     font-weight: 600;
@@ -349,29 +352,31 @@
   }
 
   .btn-outline:hover {
-    background-color: #9b7b1c;
+    background-color: #000000;
     color: #ffffff;
     transform: translateY(-2px);
   }
 
   .btn-accent {
-    background-color: #b8960c; /* Rich Gold */
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     font-weight: 600;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
+    border: 1px solid #000000;
   }
 
   .btn-accent:hover {
-    background-color: #9b7b1c;
+    background-color: #000000;
+    color: #ffffff;
     transform: translateY(-2px);
   }
 
-  /* Card Styles - Clean with borders */
+  /* Card Styles */
   .card {
     background-color: #ffffff;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #000000;
     border-radius: 1rem;
     padding: 1.5rem;
     transition: all 0.3s ease;
@@ -380,12 +385,12 @@
   .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border-color: #9b7b1c;
+    border-color: #000000;
   }
 
   .card-gold {
     background-color: #ffffff;
-    border: 2px solid #9b7b1c;
+    border: 2px solid #000000;
     border-radius: 1rem;
     padding: 1.5rem;
     transition: all 0.3s ease;
@@ -393,7 +398,7 @@
 
   .card-gold:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(155, 123, 28, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
 
   /* Background Utilities */
@@ -407,34 +412,34 @@
   }
 
   .bg-dark-gold {
-    background-color: #9b7b1c;
+    background-color: #000000;
     color: #ffffff;
   }
 
   .bg-rich-gold {
-    background-color: #b8960c;
+    background-color: #000000;
     color: #ffffff;
   }
 
   .bg-light-gray {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
   }
 
   .bg-medium-gray {
-    background-color: #e8e8e8;
+    background-color: #ffffff;
   }
 
-  /* Text Utilities - Strong Contrast */
+  /* Text Utilities */
   .text-dark-gold {
-    color: #9b7b1c;
+    color: #000000;
   }
 
   .text-rich-gold {
-    color: #b8960c;
+    color: #000000;
   }
 
   .text-light-gold {
-    color: #d4af37;
+    color: #ffffff;
   }
 
   .text-black-pure {
@@ -446,37 +451,37 @@
   }
 
   .text-gray-dark {
-    color: #333333;
+    color: #000000;
   }
 
   .text-gray-medium {
-    color: #666666;
+    color: #000000;
   }
 
   .text-gray-light {
-    color: #999999;
+    color: #000000;
   }
 
   /* Border Utilities */
   .border-dark-gold {
-    border-color: #9b7b1c;
+    border-color: #000000;
   }
 
   .border-rich-gold {
-    border-color: #b8960c;
+    border-color: #000000;
   }
 
   .border-light-gray {
-    border-color: #e5e5e5;
+    border-color: #000000;
   }
 
   /* Divider */
   .divider-gold {
-    border-bottom: 2px solid #9b7b1c;
+    border-bottom: 2px solid #000000;
   }
 
   .divider-gray {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #000000;
   }
 
   /* Hover Effects */
@@ -495,23 +500,23 @@
   }
 
   .hover-gold:hover {
-    color: #9b7b1c;
+    color: #000000;
   }
 
   /* Icon Utilities */
   .icon-gold {
-    color: #9b7b1c;
+    color: #000000;
   }
 
   .icon-accent {
-    color: #b8960c;
+    color: #000000;
   }
 
   /* Navbar */
   .navbar-light {
     background-color: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #000000;
   }
 
   /* Hero Section */
@@ -525,13 +530,13 @@
   }
 
   .section-gray-light {
-    background-color: #fafafa;
+    background-color: #ffffff;
   }
 
   /* Form Elements */
   .input-custom {
     background-color: #ffffff;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #000000;
     color: #000000;
     padding: 0.75rem;
     border-radius: 0.5rem;
@@ -539,9 +544,9 @@
   }
 
   .input-custom:focus {
-    border-color: #9b7b1c;
+    border-color: #000000;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(155, 123, 28, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
   }
 
   /* Custom Scrollbar */
@@ -550,21 +555,21 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: #f5f5f5;
+    background: #ffffff;
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #9b7b1c;
+    background: #000000;
     border-radius: 4px;
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #7d5f16;
+    background: #333333;
   }
 
   /* Footer */
   .footer-light {
-    background-color: #fafafa;
-    border-top: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    border-top: 1px solid #000000;
   }
 }

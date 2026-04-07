@@ -21,7 +21,7 @@ import {
   ClipboardCheck,
   Clock,
 } from "lucide-react";
-import logo from "../assets/orrlogo.png";
+import logo from "../assets/orrlogoreal.png";
 import logo2nd from "../assets/orrlogo.png";
 import completeData from "../src/data/completeData.json";
 
@@ -360,7 +360,7 @@ const Navbar = () => {
                 href="#contact"
                 onClick={handleLinkClick}
                 onMouseEnter={() => setActiveMegaMenu(null)}
-                className="group relative px-7 py-3.5 rounded-xl font-semibold transition-all duration-300 bg-white text-primary-foreground hover:bg-primary hover:text-white "
+                className="group relative px-7 py-3.5 rounded-xl font-semibold transition-all duration-300 bg-white text-black hover:bg-primary hover:text-white "
               >
                 <span className="relative z-10 flex items-center space-x-2">
                   <Calendar className="h-4 w-4" />
