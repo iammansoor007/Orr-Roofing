@@ -854,7 +854,7 @@ const Hero = () => {
                           rounded-2xl
                           inline-flex items-center justify-center gap-2
                           text-sm sm:text-base font-semibold tracking-wide
-                          bg-primary text-white
+                          bg-white text-black
                           border border-primary/30
                           shadow-[0_10px_30px_rgba(0,0,0,0.15)]
                           transition-all duration-300

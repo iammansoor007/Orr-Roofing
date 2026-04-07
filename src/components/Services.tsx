@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import serviceDetail from "@/assets/orrownerservices.png";
+import serviceDetail from "@/assets/orrroofing3.jpg";
 import {
   Wrench,
   Home,
