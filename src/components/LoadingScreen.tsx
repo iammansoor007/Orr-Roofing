@@ -62,7 +62,7 @@ const LogoText = () => {
     >
       <div className="text-center px-4">
         <div className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-[0.15em] text-foreground mb-4">
-          <span style={{ color: "hsl(var(--primary))" }}>ORR Roofing &</span>{" "}
+          <span style={{ color: "hsl(var(--primary))" }}>ORR Roofing &</span>{" "} <br />
           <span style={{ color: "hsl(var(--primary))" }}>Constructions</span>
         </div>
 
